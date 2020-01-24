@@ -1,0 +1,9 @@
+h1 Following are the titles of given websites:
+    ul 
+        each val in data
+            if val.valid
+                li 
+                    a(href=val.url)=val.text
+            else
+                li=val.url + ' - NO RESPONSE'
+    
